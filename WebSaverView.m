@@ -17,7 +17,7 @@
     self = [super initWithFrame:frame isPreview:isPreview];
     if (self) {
 		webView = [[WebView alloc] initWithFrame:[self bounds] frameName:nil groupName:nil];
-		[webView setMainFrameURL:[NSString stringWithFormat:@"file://%@/index.html", [[NSBundle bundleForClass:[self class]] resourcePath]]];
+		[webView setMainFrameURL:[NSString stringWithFormat:@"http://www.bookbookgoose.com", [[NSBundle bundleForClass:[self class]] resourcePath]]];
 		[self addSubview:webView];
     }
     return self;
